@@ -1,3 +1,95 @@
+# Contact form using React JS and Cloud Firestore
+
+I used  visual code, and Terminal to complete this task. I assume that you have all the requirements to build a react app. Otherwise check this link: https://www.youtube.com/watch?v=9hb_0TZ_MVI
+
+# Start
+
+1 On OS Mac open terminal and create project called ' contactform '
+> change directory: cd contactform
+
+2. In the project directory Create a react app named  ' react-form '  run:
+  npx create-react-app react-form
+
+3. Build the app for production  run:
+
+npm run build
+
+4. In your SRC  folder create a new folder called component 
+5. In the folder component create a JS file called User.js
+6. copy and paste the code from the repository
+7. In the folder component create a JS file called Firestore.js
+8. Firestore.js file will contain the firebase configuration
+9. Create a new firebase project from https://firebase.google.com/
+10. In the firebase console click on your project overview
+11. click on + Add App
+12. select web  </> 
+13. new window open: Enter the name of your APP
+14. Click on Register APP
+15. A new window will display the firebase configuration
+16. Copy and paste the firebase configuration into your file Firestore.js  ( see the repository example above)
+17. In the Firebase Console click on Database
+18. create a new collection (table) called  users
+19. inside the collection users add 3 fields:  name, email and  message
+20. the 3 fields must be string and the value leave it empty
+
+field: name   	fiel: email			fiel: message
+type: string	type: string		type: string
+value: 			value: 				value: 
+
+21. save changes
+
+22. style and image:  in the SRC folder create a new folder called ' assets '. 
+23. In the assets folder copy  and paste the folders from this repository
+
+**Firebase installation and Depployment**
+
+1. go back to terminal and navigate to your project directory  install the firebase tools globally, run:
+
+npm install firebase-tools -g
+
+2. login to firebase console run:
+
+firebase login
+
+3. after logged in run:
+
+firebase init
+
+4. select Firebase hosting  with the tab  and hit enter
+5. select the project an existing project option
+6. select your project
+7. use a public directory? 
+add the name of the projct: build  and the hit enter. ' you will notice on visual code that a new project has been created'
+8. public directory? build
+9. select 'YEs' : configure as a single-page app  index. html? YES 
+10. select 'NO ': file build index. htmnl overwrite? NO
+
+11. run npm build
+12. firebase deploy
+13. open the web link and enter information in the contact form
+14. navigate to your firebase database
+15. the information entered in the contact form must be there.
+
+**Update Information on Firebase**
+1. if you add or modify the files run the following command to see the new changes:
+2. npm run build
+3. firebase deploy
+
+
+- Notes:  I followed the tutorial from the link below React + Cloud Firestore: Step by step tutorial. It didn't work for me because there are some mistakes. I modified and improved a little bit.
+https://medium.com/get-it-working/get-googles-firestore-working-with-react-c78f198d2364
+
+
+
+
+# form
+<img width="964" alt="Explanation" src="https://github.com/jaimehernan95/react-js-contact-form-cloud-firestore/blob/master/images-github/form.png">
+
+#cloud store
+<img width="964" alt="Explanation" src="https://github.com/jaimehernan95/react-js-contact-form-cloud-firestore/blob/master/images-github/cloud.png">
+
+#React 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
