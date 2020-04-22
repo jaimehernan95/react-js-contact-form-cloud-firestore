@@ -16,30 +16,51 @@ npm run build
 
 4. In your SRC  folder create a new folder called component 
 5. In the folder component create a JS file called User.js
+see:  https://github.com/jaimehernan95/react-js-contact-form-cloud-firestore/tree/master/src/component
 6. copy and paste the code from the repository
 7. In the folder component create a JS file called Firestore.js
-8. Firestore.js file will contain the firebase configuration
-9. Create a new firebase project from https://firebase.google.com/
-10. In the firebase console click on your project overview
-11. click on + Add App
-12. select web  </> 
-13. new window open: Enter the name of your APP
-14. Click on Register APP
-15. A new window will display the firebase configuration
-16. Copy and paste the firebase configuration into your file Firestore.js  ( see the repository example above)
-17. In the Firebase Console click on Database
-18. create a new collection (table) called  users
-19. inside the collection users add 3 fields:  name, email and  message
-20. the 3 fields must be string and the value leave it empty
+
+**style and image**
+
+8. in the SRC folder create a new folder called ' assets '. 
+9. In the assets folder copy  and paste the folders css and img from this repository: https://github.com/jaimehernan95/react-js-contact-form-cloud-firestore/tree/master/src/assets
+
+10. open the index.js and the following:
+
+import './assets/css/bootstrap.min.css'
+import './assets/css/agency.min.css'
+
+11. open App.js  and add the following after </head>
+see example: https://github.com/jaimehernan95/react-js-contact-form-cloud-firestore/blob/master/src/App.js
+
+ <User></User>
+
+**Firebase**
+
+1. Firestore.js file will contain the firebase configuration
+ see:  https://github.com/jaimehernan95/react-js-contact-form-cloud-firestore/blob/master/src/component/Firestore.js
+2. Create a new firebase project from https://firebase.google.com/
+3. In the firebase console click on your project overview
+4. click on + Add App
+5. select web  </> 
+6. new window open: Enter the name of your APP
+7. Click on Register APP
+8. A new window will display the firebase configuration
+9. Copy and paste the firebase configuration into your file Firestore.js  ( see the repository example above)
+10. In the Firebase Console click on Database
+11. create a new collection (table) called  users
+12. inside the collection users add 3 fields:  name, email and  message
+13. the 3 fields must be string and the value leave it empty
 
 field: name   	fiel: email			fiel: message
 type: string	type: string		type: string
 value: 			value: 				value: 
 
-21. save changes
+14. save changes
 
-22. style and image:  in the SRC folder create a new folder called ' assets '. 
-23. In the assets folder copy  and paste the folders from this repository
+
+
+
 
 **Firebase installation and Depployment**
 

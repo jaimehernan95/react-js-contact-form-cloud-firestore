@@ -24,8 +24,9 @@ function App() {
           Learn React
         </a>
       </header>
+
       <User></User>
-      <Footer></Footer>
+    
     </div>
   );
 }
